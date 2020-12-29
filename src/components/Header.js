@@ -14,6 +14,7 @@ export default function Header() {
     <header className="gf-header">
       {isLogged ? (
         <div>
+          <Link to="/newChat">Chat</Link>
           <Link to="#" onClick={handleClick}>
             Logout
           </Link>
@@ -21,6 +22,7 @@ export default function Header() {
       ) : (
         <div>
           <Link to="/login">Login</Link>
+
         </div>
       )}
     </header>
